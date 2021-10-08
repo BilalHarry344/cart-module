@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0px;
+  padding: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+    opacity: 0.6;
+  }
+}
+
+.MuiTypography-root {
+  font-family: 'Open Sans', sans-serif !important;
+}

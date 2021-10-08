@@ -1,0 +1,53 @@
+@import '../../theme/colors.scss';
+@import '../../theme/fonts.scss';
+
+.subTotalShipping {
+  & .MuiTypography-body1 {
+    font-weight: 500;
+    color: $BlackOne;
+  }
+}
+
+.discountField {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+
+  &.MuiPaper-rounded {
+    box-shadow: none;
+  }
+
+  & .MuiInputBase-root {
+    flex: 1;
+    padding-left: 15px;
+    border: 2px solid $GrayTwo;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 0px;
+    height: 40px;
+    font-family: $OpenSans;
+    color: $Gray;
+    font-weight: 500;
+
+    &::placeholder {
+      color: $Gray;
+    }
+  }
+
+  & .divider {
+    height: 28;
+    margin: 4;
+  }
+
+  & .MuiButton-contained {
+    border-radius: 0px 5px 5px 0px;
+    background: $WhiteOne;
+    box-shadow: none;
+    height: 40px;
+    text-transform: capitalize;
+    font-family: $OpenSans;
+    color: $GrayOne;
+    font-weight: bold;
+    position: relative;
+    right: 2px;
+  }
+}

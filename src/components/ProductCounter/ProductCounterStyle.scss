@@ -1,0 +1,23 @@
+@import '../../theme/colors.scss';
+@import '../../assets/mixins.scss';
+
+.productCounter {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+
+  @include for-phone-only {
+    margin-top: 1rem;
+  }
+
+  & .MuiIconButton-root {
+    color: $BlackTwo;
+    padding: 5px;
+  }
+
+  & .MuiTypography-caption {
+    padding: 5px 14px;
+    color: $BlackTwo;
+    margin: 0px 10px;
+  }
+}

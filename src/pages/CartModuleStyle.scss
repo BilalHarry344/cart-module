@@ -1,0 +1,93 @@
+@import '../theme/colors.scss';
+@import '../theme/fonts.scss';
+@import '../assets/mixins.scss';
+
+.cartHeader {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid $WhiteTwo;
+
+  & .MuiTypography-h5 {
+    color: $Black;
+    font-weight: 600;
+    margin: 0px;
+    font-size: 24px;
+  }
+
+  & .MuiSvgIcon-root {
+    margin-right: 15px;
+  }
+}
+
+.productMainWrapper {
+  padding: 2rem 0rem 0rem;
+}
+
+.topPicks {
+  padding: 40px 0px 80px;
+
+  & .MuiTypography-h3 {
+    color: $Black;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+.sectionDivider {
+  &.MuiDivider-root {
+    margin-top: 40px;
+    background-color: $WhiteOne;
+    height: 15px;
+  }
+}
+
+.checkout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  border-top: 2px solid $WhiteTwo;
+
+  @include for-phone-only {
+    padding: 1rem 0rem;
+  }
+
+  & .MuiTypography-h6 {
+    font-size: 24px;
+    font-weight: bold;
+    color: $BlackThree;
+
+    & span {
+      color: $Blue;
+      margin-left: 5px;
+    }
+  }
+
+  & .MuiButton-contained {
+    background-color: $Blue;
+    text-transform: capitalize;
+    color: $White;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: $OpenSans;
+
+    &:hover {
+      background-color: $Blue;
+    }
+  }
+}
+
+.picksCardMobile {
+  &.MuiGrid-item {
+    @include for-Iphone-only {
+      max-width: 100%;
+      flex-basis: 100%;
+    }
+  }
+}
