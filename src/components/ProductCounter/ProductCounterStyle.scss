@@ -1,12 +1,12 @@
-@import '../../theme/colors.scss';
-@import '../../assets/mixins.scss';
+@import "../../theme/colors.scss";
+@import "../../assets/mixins.scss";
 
 .productCounter {
   display: flex;
   align-items: center;
   margin-top: 3rem;
 
-  @include for-phone-only {
+  @include for-Iphone-only {
     margin-top: 1rem;
   }
 

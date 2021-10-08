@@ -1,0 +1,27 @@
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
+
+.deleteDialog {
+  & .MuiButton-label {
+    color: $Red;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: $OpenSans;
+  }
+}
+
+.deleteDialogStyle {
+  & .MuiButton-root {
+    text-transform: capitalize;
+    font-family: $OpenSans;
+  }
+
+  & .deleteButton {
+    color: $White;
+    background-color: $Red;
+
+    &:hover {
+      background-color: $Red;
+    }
+  }
+}
