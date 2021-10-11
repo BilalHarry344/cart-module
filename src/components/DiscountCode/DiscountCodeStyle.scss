@@ -1,5 +1,5 @@
-@import '../../theme/colors.scss';
-@import '../../theme/fonts.scss';
+@import "../../theme/colors.scss";
+@import "../../theme/fonts.scss";
 
 .subTotalShipping {
   & .MuiTypography-body1 {
@@ -49,5 +49,12 @@
     font-weight: bold;
     position: relative;
     right: 2px;
+
+    &:hover,
+    &:focus {
+      color: $GrayOne;
+      background: $WhiteOne;
+      box-shadow: none;
+    }
   }
 }
